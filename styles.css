@@ -1,0 +1,57 @@
+body {
+    background-color: #ffebee;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #f50057;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: #f50057;
+    font-size: 2.5em;
+}
+
+.message {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#kissButton {
+    background-color: #f50057;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#kissButton:hover {
+    background-color: #c51162;
+}
+
+.kiss-animation {
+    display: none;
+    position: absolute;
+    font-size: 3em;
+    color: #f50057;
+    animation: float 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
